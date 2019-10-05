@@ -107,7 +107,7 @@ left: 0;
 .split-left-container-3 {
 z-index: 1;
 height: 100%;
-width: 60%;
+width: 50%;
 left: 0;
 background-color: #ffffff;
 overflow-x: hidden;
@@ -117,7 +117,7 @@ overflow-x: hidden;
 .split-right-container-3 {
 z-index: 1;
 height: 100%;
-width: 40%;
+width: 50%;
 float: right;
 
 background-position: top left;
