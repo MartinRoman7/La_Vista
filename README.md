@@ -1,5 +1,5 @@
 # Sistema para venta de domicilios
-Plataforma para empresa La Vista
+Plataforma La Vista
 
 ## Instalación
 ```
