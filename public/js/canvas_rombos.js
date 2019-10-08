@@ -1,7 +1,7 @@
 //$(document).ready(function(){
 
 var random_live_style_menu_container = document.getElementById('live-style-menu-container');
-        
+
 random_live_style_menu_container.addEventListener('click', function(event) {
 
     var canvas = document.getElementById("canvas-rombos");
@@ -110,55 +110,55 @@ random_live_style_menu_container.addEventListener('click', function(event) {
         /////////////////////////////////////////////////////////////////////////////
         ctx_ab_1.beginPath();
         ctx_ab_1.moveTo(posX_ab_1, posY_ab_1);
-        ctx_ab_1.lineTo(posX_ab_1+lineLength_ab_1, posY_ab_1+lineLength_ab_1);
+        ctx_ab_1.lineTo(posX_ab_1 + lineLength_ab_1, posY_ab_1 + lineLength_ab_1);
         ctx_ab_1.stroke();
         /////////////////////////////////////////////////////////////////////////////
         ctx_ab_2.beginPath();
         ctx_ab_2.moveTo(posX_ab_2, posY_ab_2);
-        ctx_ab_2.lineTo(posX_ab_2+lineLength_ab_2, posY_ab_2+lineLength_ab_2);
+        ctx_ab_2.lineTo(posX_ab_2 + lineLength_ab_2, posY_ab_2 + lineLength_ab_2);
         ctx_ab_2.stroke();
         /////////////////////////////////////////////////////////////////////////////
         ctx_ab_3.beginPath();
         ctx_ab_3.moveTo(posX_ab_3, posY_ab_3);
-        ctx_ab_3.lineTo(posX_ab_3+lineLength_ab_3, posY_ab_3+lineLength_ab_3);
+        ctx_ab_3.lineTo(posX_ab_3 + lineLength_ab_3, posY_ab_3 + lineLength_ab_3);
         ctx_ab_3.stroke();
         /////////////////////////////////////////////////////////////////////////////
         ctx_ab_4.beginPath();
         ctx_ab_4.moveTo(posX_ab_4, posY_ab_4);
-        ctx_ab_4.lineTo(posX_ab_4+lineLength_ab_4, posY_ab_4+lineLength_ab_4);
+        ctx_ab_4.lineTo(posX_ab_4 + lineLength_ab_4, posY_ab_4 + lineLength_ab_4);
         ctx_ab_4.stroke();
         /////////////////////////////////////////////////////////////////////////////
         ctx_ba_1.beginPath();
         ctx_ba_1.moveTo(posX_ba_1, posY_ba_1);
-        ctx_ba_1.lineTo(posX_ba_1+lineLength_ba_1, posY_ba_1-lineLength_ba_1);
+        ctx_ba_1.lineTo(posX_ba_1 + lineLength_ba_1, posY_ba_1 - lineLength_ba_1);
         ctx_ba_1.stroke();
         /////////////////////////////////////////////////////////////////////////////
         ctx_ba_2.beginPath();
         ctx_ba_2.moveTo(posX_ba_2, posY_ba_2);
-        ctx_ba_2.lineTo(posX_ba_2+lineLength_ba_2, posY_ba_2-lineLength_ba_2);
+        ctx_ba_2.lineTo(posX_ba_2 + lineLength_ba_2, posY_ba_2 - lineLength_ba_2);
         ctx_ba_2.stroke();
         /////////////////////////////////////////////////////////////////////////////
         ctx_ba_3.beginPath();
         ctx_ba_3.moveTo(posX_ba_3, posY_ba_3);
-        ctx_ba_3.lineTo(posX_ba_3+lineLength_ba_3, posY_ba_3-lineLength_ba_3);
+        ctx_ba_3.lineTo(posX_ba_3 + lineLength_ba_3, posY_ba_3 - lineLength_ba_3);
         ctx_ba_3.stroke();
         /////////////////////////////////////////////////////////////////////////////
         ctx_ba_4.beginPath();
         ctx_ba_4.moveTo(posX_ba_4, posY_ba_4);
-        ctx_ba_4.lineTo(posX_ba_4+lineLength_ba_4, posY_ba_4-lineLength_ba_4);
+        ctx_ba_4.lineTo(posX_ba_4 + lineLength_ba_4, posY_ba_4 - lineLength_ba_4);
         ctx_ba_4.stroke();
         /////////////////////////////////////////////////////////////////////////////
-        
+
     }
-    
-    function moveLine () {
+
+    function moveLine() {
 
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_1 += speed_ab_1;
         posX_ab_1 += speed_ab_1;
-      
+
         //if (posY_ab_1 < 0 || posY_ab_1 > canvas.height || posX_ab_1 < 0 || posX_ab_1 > canvas.width) {
-        if ( posY_ab_1+lineLength_ab_1 > canvas.height - 35 ) {
+        if (posY_ab_1 + lineLength_ab_1 > canvas.height - 35) {
             // Repetido
             //posY_ab_1 = posY_ab_1_static;
             //posX_ab_1 = posX_ab_1_static;
@@ -168,73 +168,73 @@ random_live_style_menu_container.addEventListener('click', function(event) {
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_2 += speed_ab_2;
         posX_ab_2 += speed_ab_2;
-      
-        if ( posY_ab_2+lineLength_ab_2 > canvas.height - 68 ) {
+
+        if (posY_ab_2 + lineLength_ab_2 > canvas.height - 68) {
             speed_ab_2 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_3 += speed_ab_3;
         posX_ab_3 += speed_ab_3;
-      
-        if ( posY_ab_3+lineLength_ab_3 > canvas.height - 102 ) {
+
+        if (posY_ab_3 + lineLength_ab_3 > canvas.height - 102) {
             speed_ab_3 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_4 += speed_ab_4;
         posX_ab_4 += speed_ab_4;
-      
-        if ( posY_ab_4+lineLength_ab_4 > canvas.height - 168 ) {
+
+        if (posY_ab_4 + lineLength_ab_4 > canvas.height - 168) {
             speed_ab_4 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_1 -= speed_ba_1;
         posX_ba_1 += speed_ba_1;
-        
-        if ( posY_ba_1-lineLength_ba_1 < canvas.height - 202 ) {
+
+        if (posY_ba_1 - lineLength_ba_1 < canvas.height - 202) {
             speed_ba_1 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_2 -= speed_ba_2;
         posX_ba_2 += speed_ba_2;
-        
-        if ( posY_ba_2-lineLength_ba_2 < canvas.height - 202 ) {
+
+        if (posY_ba_2 - lineLength_ba_2 < canvas.height - 202) {
             speed_ba_2 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_3 -= speed_ba_3;
         posX_ba_3 += speed_ba_3;
-        
-        if ( posY_ba_3-lineLength_ba_3 < canvas.height - 167 ) {
+
+        if (posY_ba_3 - lineLength_ba_3 < canvas.height - 167) {
             speed_ba_3 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_4 -= speed_ba_4;
         posX_ba_4 += speed_ba_4;
-        
-        if ( posY_ba_4-lineLength_ba_4 < canvas.height - 102 ) {
+
+        if (posY_ba_4 - lineLength_ba_4 < canvas.height - 102) {
             speed_ba_4 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
-        
+
     }
-    
+
     function loop() {
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ab_1.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ab_1.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ab_2.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ab_2.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ab_3.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ab_3.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ab_4.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ab_4.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ba_1.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ba_1.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ba_2.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ba_2.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ba_3.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ba_3.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
-        ctx_ba_4.clearRect(0,0,canvas.width, canvas.height);
+        ctx_ba_4.clearRect(0, 0, canvas.width, canvas.height);
         /////////////////////////////////////////////////////////////////////////////
         moveLine();
         drawLine();
@@ -242,8 +242,24 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     }
     requestAnimationFrame(loop);
 
-    
+
+    context = canvas.getContext('2d');
+
+    //Loading of the home test image - img1
+    var img1 = new Image();
+
+    //drawing of the test image - img1
+    img1.onload = function() {
+        //draw background image
+        context.drawImage(img1, 0, 0);
+        //draw a box over the top
+
+    };
+
+    img1.src = '../images/life_style.png';
+
+
+
 
 
 });
-//});
