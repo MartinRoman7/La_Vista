@@ -5,7 +5,7 @@
  * Autor: Oscar Martín Arcos Román
  */
 
- // Mensaje de prueba 1
+ // Mensaje de prueba 2
 
 // Declaración de requerimientos
 var express = require('express');
