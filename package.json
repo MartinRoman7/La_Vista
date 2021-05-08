@@ -23,7 +23,7 @@
         "express-messages": "*",
         "express-session": "*",
         "express-validator": "^5.3.1",
-        "handlebars": "^4.4.0",
+        "handlebars": "^4.7.7",
         "mongodb": "*",
         "mongoose": "*",
         "node-cmd": "^3.0.0",
